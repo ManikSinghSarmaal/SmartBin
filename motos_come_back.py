@@ -23,7 +23,7 @@ cwd = os.getcwd()
 model_path = os.path.join(cwd, 'sbin_best.pt')
 model = YOLO(model_path)
 
-image = 'define-your-image'
+image = '/Users/maniksinghsarmaal/Downloads/GitHub/yolov8_sbin/testing/r1.jpg'
 results = model.predict(image)
 
 # Get the predicted class probabilities
