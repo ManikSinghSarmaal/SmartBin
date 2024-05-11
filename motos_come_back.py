@@ -17,11 +17,10 @@ GPIO.setup(STEP_PIN_2, GPIO.OUT)
 GPIO.setup(DIR_PIN_2, GPIO.OUT)
 
 # Initialize the camera
-#camera = cv2.VideoCapture(0)  # 0 for the default camera
+# camera = cv2.VideoCapture(0)  # 0 for the default camera
 
 cwd = os.getcwd()
 model_path = os.path.join(cwd, 'sbin_best.pt')
-
 model = YOLO(model_path)
 
 image = 'define-your-image'
@@ -48,6 +47,14 @@ if predicted_class_idx == 0:  # Inorganic
         time.sleep(0.01)  # Adjust the delay as needed
         GPIO.output(STEP_PIN_1, GPIO.LOW)
         time.sleep(0.01)  # Adjust the delay as needed
+
+    GPIO.output(DIR_PIN_1, GPIO.LOW)  # Set the direction of Motor 1 (anti-clockwise)
+    for i in range(200):  # Adjust the number of steps as needed
+        GPIO.output(STEP_PIN_1, GPIO.HIGH)
+        time.sleep(0.01)  # Adjust the delay as needed
+        GPIO.output(STEP_PIN_1, GPIO.LOW)
+        time.sleep(0.01)  # Adjust the delay as needed
+
 elif predicted_class_idx == 2:  # Metal
     GPIO.output(DIR_PIN_1, GPIO.LOW)  # Set the direction of Motor 1 (anti-clockwise)
     for i in range(200):  # Adjust the number of steps as needed
@@ -55,6 +62,14 @@ elif predicted_class_idx == 2:  # Metal
         time.sleep(0.01)  # Adjust the delay as needed
         GPIO.output(STEP_PIN_1, GPIO.LOW)
         time.sleep(0.01)  # Adjust the delay as needed
+
+    GPIO.output(DIR_PIN_1, GPIO.HIGH)  # Set the direction of Motor 1 (clockwise)
+    for i in range(200):  # Adjust the number of steps as needed
+        GPIO.output(STEP_PIN_1, GPIO.HIGH)
+        time.sleep(0.01)  # Adjust the delay as needed
+        GPIO.output(STEP_PIN_1, GPIO.LOW)
+        time.sleep(0.01)  # Adjust the delay as needed
+
 elif predicted_class_idx == 1:  # Organics
     GPIO.output(DIR_PIN_2, GPIO.HIGH)  # Set the direction of Motor 2 (clockwise)
     for i in range(200):  # Adjust the number of steps as needed
@@ -63,6 +78,12 @@ elif predicted_class_idx == 1:  # Organics
         GPIO.output(STEP_PIN_2, GPIO.LOW)
         time.sleep(0.01)  # Adjust the delay as needed
 
+    GPIO.output(DIR_PIN_2, GPIO.LOW)  # Set the direction of Motor 2 (anti-clockwise)
+    for i in range(200):  # Adjust the number of steps as needed
+        GPIO.output(STEP_PIN_2, GPIO.HIGH)
+        time.sleep(0.01)  # Adjust the delay as needed
+        GPIO.output(STEP_PIN_2, GPIO.LOW)
+        time.sleep(0.01)  # Adjust the delay as needed
 
-#clean up GPIO
+# Clean up GPIO
 GPIO.cleanup()
