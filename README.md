@@ -1,6 +1,4 @@
-# yolov8_sbin
- 
-# Intelligent Waste Segregation System
+ # Intelligent Waste Segregation System
 
 This project aims to develop an intelligent waste segregation system that can automatically classify and sort different types of waste materials into three categories: organic, inorganic, and metal. The system utilizes computer vision and machine learning techniques to analyze captured images of waste items and direct them into the appropriate bin section using a mechanical sorting mechanism.
 
@@ -57,6 +55,9 @@ The proposed solution involves the integration of several key components: image 
 - The system can process and sort [Y] waste items per minute.
 - [https://drive.google.com/file/d/14Xc3c1qOiZjQKldAli8NWx0QTQpTw1aF/view?usp=sharing]
 
+## Prototype
+![Demo Picture](Images/IMG_4918.HEIC)
+
 ## Contributing
 
 If you'd like to contribute to this project, please follow these steps:
@@ -66,3 +67,5 @@ If you'd like to contribute to this project, please follow these steps:
 3. Make your changes and commit them (`git commit -am 'Add your feature'`).
 4. Push to the branch (`git push origin feature/your-feature`).
 5. Create a new Pull Request.
+
+
