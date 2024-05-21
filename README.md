@@ -56,7 +56,14 @@ The proposed solution involves the integration of several key components: image 
 - [https://drive.google.com/file/d/14Xc3c1qOiZjQKldAli8NWx0QTQpTw1aF/view?usp=sharing]
 
 ## Prototype
-![Demo Picture](Images/IMG_4918.HEIC)
+<div align="center">
+  <img src="Images/IMG_4918.HEIC" width="45%" />
+  <em>Circuit Diagram</em>
+</div>
+<div align="center">
+  <img src="Images/IMG_4948.HEIC" width="45%" />
+  <em>Prototype</em>
+</div>
 
 ## Contributing
 
