@@ -55,7 +55,7 @@ The proposed solution involves the integration of several key components: image 
 - The intelligent waste segregation system has been successfully developed and integrated with the Raspberry Pi and mechanical sorting mechanism.
 - The trained YOLO model achieves an accuracy of [X%] in classifying waste items into the three categories.
 - The system can process and sort [Y] waste items per minute.
-- [Link to video demonstration of the working product]
+- [https://drive.google.com/file/d/14Xc3c1qOiZjQKldAli8NWx0QTQpTw1aF/view?usp=sharing]
 
 ## Contributing
 
