@@ -44,7 +44,7 @@ The proposed solution involves the integration of several key components: image 
 
 ## Usage
 
-1. Run the main script (`main.py`) to start the waste segregation system.
+1. Run the main script (`motors_come_back.py`) to start the waste segregation system.
 2. The Raspberry Pi camera will capture images of waste items as they are introduced into the system.
 3. The captured images will be processed by the YOLO model to classify the waste into organic, inorganic, or metal categories.
 4. Based on the predicted category, the mechanical sorting mechanism will be activated to direct the waste item into the corresponding bin section.
