@@ -5,7 +5,7 @@ import os
 cwd = os.getcwd()
 model_path = os.path.join(cwd,'sbin_best.pt')
 
-image = "/Users/maniksinghsarmaal/Downloads/GitHub/yolov8_sbin/testing/r1.jpg"
+image = "/Users/maniksinghsarmaal/Downloads/GitHub/yolov8_sbin/testing/book.jpeg"
 model = YOLO('/Users/maniksinghsarmaal/Downloads/yolov8_sbin/runs/classify/train/weights/best.pt')
 results = model.predict(image)
 
