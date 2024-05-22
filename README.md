@@ -19,9 +19,9 @@ The proposed solution involves the integration of several key components: image 
 
 ## Components
 
-1. **Raspberry Pi 4 Model B**
+1. **Raspberry Pi 3 Model B+**
 2. **Raspberry Pi Camera Module**
-3. **Stepper Motors and Motor Drivers**
+3. **Nemo 17 Stepper Motors and A4988 Motor Drivers**
 4. **Mechanical Sorting Mechanism (Flaps and Bins)**
 5. **Printed Circuit Boards (PCBs) for motor drivers and control circuits**
 6. **Power supply units**
